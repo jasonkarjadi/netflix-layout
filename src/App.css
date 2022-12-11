@@ -181,7 +181,7 @@ button {
 
 .movieitem {
   width: 25%;
-  padding: 0 2px;
+  padding: 64px 2px;
   position: relative;
 }
 
@@ -192,4 +192,16 @@ button {
   bottom: 0;
   right: 0;
   width: 100%;
+}
+
+.movieadder {
+  margin: 100px 30px 20px;
+}
+
+.inputentry {
+  width: 95%;
+}
+
+.moviesdisplay {
+  margin: 30px;
 }

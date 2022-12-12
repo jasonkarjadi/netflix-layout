@@ -1,0 +1,40 @@
+{
+  "movies": [
+    {
+      "id": "001",
+      "title": "MY ID IS GANGNAM BEAUTY",
+      "url": "/my-id-gangnam-beauty-background.webp",
+      "synopsis": "Di-bully karena tampang, Mi-rae melakukan operasi plastik demi hidup yang lebih baik, tapi malah menghadapi tantangan baru di kampus. Berdasarkan webtoon Korea populer."
+    },
+    {
+      "id": "002",
+      "title": "ALICE IN BORDERLAND",
+      "url": "/alice-in-borderland.jpg",
+      "synopsis": ""
+    },
+    {
+      "id": "003",
+      "title": "STRANGER THINGS",
+      "url": "/stranger-things.jpg",
+      "synopsis": ""
+    },
+    {
+      "id": "005",
+      "title": "PARASYTE",
+      "url": "/parasyte.webp",
+      "synopsis": ""
+    },
+    {
+      "title": "The Rain",
+      "url": "https://occ-0-6707-64.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABakBgzCBU4xabMrvv1ZEcUvYHM8aA_02yEorWE8-MRqqRpwcuDim5wzGk9PMAAmcuz3H73dfBpZ-ayvojozdN3VwB7rT8yJoiTHivkdoKWMqZfbOhvpU4jx91tYBXa8iZYy-.jpg?r=dd8",
+      "synopsis": "Enam tahun setelah hujan bervirus membunuh sebagian besar warga Skandinavia, dua bersaudara bergabung dengan grup penyintas muda demi mencari perlindungan dan jawaban.",
+      "id": "Bb4G9vY"
+    },
+    {
+      "title": "GO AHEAD",
+      "url": "https://media.suara.com/pictures/970x544/2021/12/09/73169-c-drama-go-ahead.jpg",
+      "synopsis": "apalah",
+      "id": "BPA-cGg"
+    }
+  ]
+}

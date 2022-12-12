@@ -1,6 +1,6 @@
 import NavLink from "./NavLink";
 
-const NavBar = () => {
+const NavBar = ({ handleClick, isOpen }) => {
   return (
     <header className="topheader flex">
       <nav className="topnav flex">
@@ -14,7 +14,9 @@ const NavBar = () => {
         <NavLink href="/browse">Daftar Saya</NavLink>
         <NavLink href="/browse">Telusuri menurut Bahasa</NavLink>
       </nav>
-      <div className="flex"></div>
+      <button className="btnadd" onClick={handleClick}>
+        {!isOpen ? "Add Movie" : "Close Form"}
+      </button>
     </header>
   );
 };

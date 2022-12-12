@@ -81,14 +81,15 @@ audio,
 video {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #000000;
-  background-image: url("../public/my-id-gangnam-beauty-background.webp");
+  /* background-image: url("../public/my-id-gangnam-beauty-background.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50%;
+  background-position: 50%; */
 }
 
 body::after {
@@ -116,6 +117,12 @@ button {
   display: flex;
 }
 
+.mainapp {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
 .topheader {
   height: 68px;
   padding: 0 40px;
@@ -124,6 +131,13 @@ button {
     rgba(0, 0, 0, 0.7) 10%,
     transparent
   );
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
 }
 
 .topnav {
@@ -139,6 +153,11 @@ button {
 .moviefocus {
   width: 360px;
   padding: 0 40px;
+  padding-top: 300px;
+}
+
+.movietitle {
+  color: #ffffff;
 }
 
 .moviesynopsis {
@@ -155,12 +174,12 @@ button {
   border-radius: 4px;
 }
 
-.btnplay {
+.btnedit {
   color: #000000;
   background-color: #ffffff;
 }
 
-.btninfo {
+.btndelete {
   color: #ffffff;
   background-color: rgba(109, 109, 110, 0.7);
 }
@@ -176,7 +195,9 @@ button {
 }
 
 .movierowslide {
-  padding: 0 40px;
+  /* padding: 0 40px; */
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .movieitem {
@@ -194,14 +215,46 @@ button {
   width: 100%;
 }
 
-.movieadder {
-  margin: 100px 30px 20px;
+.movieformwrap {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url("../public/netflix-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.movieform {
+  flex-direction: column;
+  margin: 0 auto 0;
+  width: 630px;
+  padding: 64px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .inputentry {
-  width: 95%;
+  margin-bottom: 10px;
+}
+
+.btnsubmit {
+  padding: 10px 20px;
+  background-color: #e5e5e5;
+  border-radius: 4px;
+  margin: 20px auto;
 }
 
 .moviesdisplay {
   margin: 30px;
+}
+
+.btnadd {
+  border-radius: 4px;
+  background-color: #d81f26;
+  color: #ffffff;
+  padding: 10px;
 }

@@ -1,19 +1,22 @@
-const Focus = () => {
+import axios from "axios";
+
+const Focus = ({ movie, fetchMovies, handleClick }) => {
+  const deleteMovie = async () => {
+    await axios.delete(`http://localhost:2000/movies/${movie.id}`);
+    fetchMovies();
+  };
+
   return (
     <div className="moviefocus">
-      <img
-        src="/my-id-gangnam-beauty-logo.webp"
-        alt="movie-logo"
-        height="150px"
-      />
-      <p className="moviesynopsis">
-        Di-bully karena tampang, Mi-rae melakukan operasi plastik demi hidup
-        yang lebih baik, tapi malah menghadapi tantangan baru di kampus.
-        Berdasarkan webtoon Korea populer.
-      </p>
+      <h1 className="movietitle">{movie.title}</h1>
+      <p className="moviesynopsis">{movie.synopsis}</p>
       <div>
-        <button className="btnmovie btnplay">Putar</button>
-        <button className="btnmovie btninfo">Selengkapnya</button>
+        <button className="btnmovie btnedit" onClick={handleClick}>
+          Edit
+        </button>
+        <button className="btnmovie btndelete" onClick={deleteMovie}>
+          Delete
+        </button>
       </div>
     </div>
   );
